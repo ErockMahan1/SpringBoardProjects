@@ -1,0 +1,58 @@
+Data Science Career Track
+Model Metrics For Capstone 2 - 
+Academic Success Related to Spending
+
+Model Metrics Summary: Graduation Rate Forecasting & Spending Analysis
+=====================================================================
+
+Models Used
+----------
+- Random Forest Regressor (or insert specific model used)
+- Target Variables: Graduation Rate (%), Spending
+- Features: State, Year, Education Spending, Graduation Rate
+
+
+Prediction Performance
+----------------------
+Pearson correlation coefficient: 0.02823
+Pearson r: 0.0282320519487733
+p-value: (rounded to 5 decimal places)s  (0.00005)
+
+
+Correlation Analysis
+--------------------
+- Spending vs. Graduation Rate:
+  - Pearson Correlation Coefficient: e.g., 0.19
+  - Interpretation: Weak to no linear correlation overall, with variation across states.
+- Key Insight: Increased spending does NOT consistently lead to increased graduation rates, nor does reduced spending always correlate with decreased performance.
+
+
+Notable Observations
+--------------------
+- Vermont had one of the highest increases in spending but experienced the largest drop in graduation rate.
+- Wyoming had the biggest spending cut but still saw a modest increase in graduation rate.
+- Some states saw improved graduation outcomes despite minimal spending changes, suggesting other factors are responsible for these changes
+
+
+Visualization Summary
+---------------------
+- Line plots showed trends in spending and graduation rates from 2011–2018.
+- Percent change plots highlighted volatility in both spending and performance.
+- Color-coded bar charts visualized:
+  - Spending change (green = increase, red = decrease)
+  - Graduation rate change (position on axis = change; color = spending context)
+
+
+Forecasting
+-----------
+- Graduation rates were predicted for years beyond the dataset (e.g., 2019–2021).
+- Visual comparison of actual vs. predicted performance for individual states showed:
+  - Reasonably close alignment for many states
+  - Some divergence where model underestimated or overestimated the true values
+
+
+Next Steps
+----------
+- Incorporate additional features (quality of education, economic indicators, alternative secondary education)
+- Compare state-specific models
+
