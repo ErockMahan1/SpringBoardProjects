@@ -2,27 +2,26 @@
 
 ## Overview
 
-This project explores the relationship between school funding and academic performance, focusing on whether increased spending per student correlates with improved graduation rates. The study provides data-driven insights and actionable recommendations for policymakers, especially in states like Idaho where education budgets are under review.
+This project explores the relationship between school funding and academic performance, focusing on whether increased spending per student correlates with improved graduation rates. The intend of this study is to provide data-driven insights and actionable recommendations for policymakers and inform voters, especially in states like Idaho where education budgets are under review.
 
 ---
 
 ## Background & Motivation
 
-School funding is a critical and contentious issue in the United States. Despite frequent claims linking funding to student outcomes, empirical evidence is often lacking. This analysis aims to clarify:
+School funding is a critical and contentious issue in the United States. Any discussion about potentially lowered school budgets is shouted down as irresponsible, as it will necessarily lead to lower academic performance. This analysis aims to clarify:
 
-- **Primary Question:** Does increased school spending directly correlate with improved academic performance (specifically, graduation rates)?
-- **Secondary Questions:**
+- **Primary Question:**
+  - Does increased school spending directly correlate with improved academic performance (specifically, graduation rates)?
+- **Secondary Question:**
   - Which states outperform or underperform relative to their funding levels?
-  - What can be learned from states at both extremes?
-
 ---
 
 ## Research Objectives
 
+- Evaluate the correlation between per-student funding and graduation rates across states.
 - Provide evidence-based recommendations for funding allocation.
 - Identify high-impact investment areas to maximize student success.
-- Evaluate the correlation between per-student funding and graduation rates across states.
-
+  
 ---
 
 ## Methodology
@@ -41,7 +40,8 @@ School funding is a critical and contentious issue in the United States. Despite
 ### Analysis Approach
 
 - **Correlation Analysis:** Examined the relationship between funding and graduation rates using Pearson’s correlation coefficient.
-- **Predictive Modeling:** Tested ARIMA, ETS, Linear Regression, and Random Forest Regression models. Linear Regression and Random Forest were selected for their accuracy and ability to handle multi-state data.
+- **Predictive Modeling:** Tested ARIMA, ETS, Linear Regression, and Random Forest Regression models.
+    - Linear Regression and Random Forest were selected for their accuracy and ability to handle multi-state data.
 
 ---
 
