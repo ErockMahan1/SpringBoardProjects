@@ -1942,7 +1942,7 @@
     </dashboard>
   </dashboards>
   <windows saved-dpi-scale-factor='1.25' source-height='89'>
-    <window class='worksheet' name='ACT top 5 per year'>
+    <window class='worksheet' maximized='true' name='ACT top 5 per year'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -2062,6 +2062,34 @@
       </cards>
       <simple-id uuid='{552AA3F3-0262-42E9-8966-87593D9738AE}' />
     </window>
+    <window class='worksheet' name='ACT Statewide Changes'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='3' param='[federated.13nhwss1lnlii01f7th6d16xtesa].[avg:Score:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6733F426-254E-4227-BFCC-4806C47BEC7B}' />
+    </window>
     <window class='worksheet' name='SAT2 Statewide Changes'>
       <cards>
         <edge name='left'>
@@ -2089,34 +2117,6 @@
         </edge>
       </cards>
       <simple-id uuid='{255CF0FE-3F8A-4A60-BB21-A8AB3A1E6A7A}' />
-    </window>
-    <window class='worksheet' maximized='true' name='ACT Statewide Changes'>
-      <cards>
-        <edge name='left'>
-          <strip size='160'>
-            <card type='pages' />
-            <card type='filters' />
-            <card type='marks' />
-          </strip>
-        </edge>
-        <edge name='top'>
-          <strip size='2147483647'>
-            <card type='columns' />
-          </strip>
-          <strip size='2147483647'>
-            <card type='rows' />
-          </strip>
-          <strip size='2147483647'>
-            <card type='title' />
-          </strip>
-        </edge>
-        <edge name='right'>
-          <strip size='160'>
-            <card pane-specification-id='3' param='[federated.13nhwss1lnlii01f7th6d16xtesa].[avg:Score:qk]' type='color' />
-          </strip>
-        </edge>
-      </cards>
-      <simple-id uuid='{6733F426-254E-4227-BFCC-4806C47BEC7B}' />
     </window>
     <window class='worksheet' name='SAT2 StateYear/Score'>
       <cards>
