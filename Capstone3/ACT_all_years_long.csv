@@ -1529,6 +1529,7 @@ Washington,2017,Science,22.0
 West Virginia,2017,Science,20.5
 Wisconsin,2017,Science,20.9
 Wyoming,2017,Science,20.6
+United States,2018,Composite,20.8
 Alabama,2018,Composite,19.1
 Alaska,2018,Composite,20.8
 Arizona,2018,Composite,19.2
@@ -1580,6 +1581,7 @@ Washington,2018,Composite,22.2
 West Virginia,2018,Composite,20.3
 Wisconsin,2018,Composite,20.5
 Wyoming,2018,Composite,20.0
+United States,2018,English,20.2
 Alabama,2018,English,18.9
 Alaska,2018,English,19.8
 Arizona,2018,English,18.2
@@ -1631,6 +1633,7 @@ Washington,2018,English,21.4
 West Virginia,2018,English,19.8
 Wisconsin,2018,English,19.8
 Wyoming,2018,English,19.0
+United States,2018,Mathematics,20.5
 Alabama,2018,Mathematics,18.3
 Alaska,2018,Mathematics,20.6
 Arizona,2018,Mathematics,19.4
@@ -1682,6 +1685,7 @@ Washington,2018,Mathematics,22.2
 West Virginia,2018,Mathematics,19.4
 Wisconsin,2018,Mathematics,20.3
 Wyoming,2018,Mathematics,19.7
+United States,2018,Reading,21.3
 Alabama,2018,Reading,19.6
 Alaska,2018,Reading,21.6
 Arizona,2018,Reading,19.5
@@ -1733,6 +1737,7 @@ Washington,2018,Reading,22.7
 West Virginia,2018,Reading,21.3
 Wisconsin,2018,Reading,20.6
 Wyoming,2018,Reading,20.6
+United States,2018,Science,20.7
 Alabama,2018,Science,19.0
 Alaska,2018,Science,20.7
 Arizona,2018,Science,19.2
