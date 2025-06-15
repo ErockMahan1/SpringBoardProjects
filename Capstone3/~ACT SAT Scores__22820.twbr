@@ -1373,353 +1373,6 @@
         </objects>
       </object-graph>
     </datasource>
-    <datasource caption='SAT_NEW_long' inline='true' name='federated.11t7efg1iybohx16ieuth0f119rh' version='18.1'>
-      <connection class='federated'>
-        <named-connections>
-          <named-connection caption='SAT_NEW_long' name='textscan.1s9xl4x0k0n4sq120px4c1w1apaw'>
-            <connection class='textscan' directory='C:/Users/emcdo/OneDrive/Documents/GitHub/SpringBoardProjects/Capstone3' filename='SAT_NEW_long.csv' password='' server='' workgroup-auth-mode='as-is' />
-          </named-connection>
-        </named-connections>
-        <relation connection='textscan.1s9xl4x0k0n4sq120px4c1w1apaw' name='SAT_NEW_long.csv' table='[SAT_NEW_long#csv]' type='table'>
-          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
-            <column datatype='string' name='State' ordinal='0' />
-            <column datatype='string' name='Year' ordinal='1' />
-            <column datatype='string' name='Subject' ordinal='2' />
-            <column datatype='integer' name='Score' ordinal='3' />
-          </columns>
-        </relation>
-        <metadata-records>
-          <metadata-record class='capability'>
-            <remote-name />
-            <remote-type>0</remote-type>
-            <parent-name>[SAT_NEW_long.csv]</parent-name>
-            <remote-alias />
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
-              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
-              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
-              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
-              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
-              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>State</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[State]</local-name>
-            <parent-name>[SAT_NEW_long.csv]</parent-name>
-            <remote-alias>State</remote-alias>
-            <ordinal>0</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <scale>1</scale>
-            <width>1073741823</width>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='LEN_RUS' />
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Year</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[Year]</local-name>
-            <parent-name>[SAT_NEW_long.csv]</parent-name>
-            <remote-alias>Year</remote-alias>
-            <ordinal>1</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <scale>1</scale>
-            <width>1073741823</width>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='LEN_RUS' />
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Subject</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[Subject]</local-name>
-            <parent-name>[SAT_NEW_long.csv]</parent-name>
-            <remote-alias>Subject</remote-alias>
-            <ordinal>2</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <scale>1</scale>
-            <width>1073741823</width>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='LEN_RUS' />
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Score</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[Score]</local-name>
-            <parent-name>[SAT_NEW_long.csv]</parent-name>
-            <remote-alias>Score</remote-alias>
-            <ordinal>3</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-          </metadata-record>
-        </metadata-records>
-      </connection>
-      <aliases enabled='yes' />
-      <column caption='ACTsum' datatype='integer' name='[Calculation_1605814762568171526]' role='measure' type='quantitative'>
-        <calculation class='tableau' formula='Sum([Score])' />
-      </column>
-      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
-      <column caption='Year1' datatype='string' name='[Year]' role='dimension' type='nominal' />
-      <column caption='SAT_NEW_long.csv' datatype='table' name='[__tableau_internal_object_id__].[SAT_NEW_long.csv_8B152C9DAD614870B2CA38E1B2DA2E0D]' role='measure' type='quantitative' />
-      <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
-      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
-        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/emcdo/AppData/Local/Temp/TableauTemp/#TableauTemp_16pemoe1ha1f8z193aqj51d9jmni.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='06/12/2025 07:10:10 PM' username='tableau_internal_user'>
-          <relation name='Extract' table='[Extract].[Extract]' type='table' />
-          <metadata-records>
-            <metadata-record class='column'>
-              <remote-name>State</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[State]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>State</remote-alias>
-              <ordinal>0</ordinal>
-              <family>SAT_NEW_long.csv</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>51</approx-count>
-              <contains-null>true</contains-null>
-              <collation flag='0' name='LEN_RUS' />
-              <object-id>[SAT_NEW_long.csv_8B152C9DAD614870B2CA38E1B2DA2E0D]</object-id>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>Year</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[Year]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>Year</remote-alias>
-              <ordinal>1</ordinal>
-              <family>SAT_NEW_long.csv</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>3</approx-count>
-              <contains-null>true</contains-null>
-              <collation flag='0' name='binary' />
-              <object-id>[SAT_NEW_long.csv_8B152C9DAD614870B2CA38E1B2DA2E0D]</object-id>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>Subject</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[Subject]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>Subject</remote-alias>
-              <ordinal>2</ordinal>
-              <family>SAT_NEW_long.csv</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>3</approx-count>
-              <contains-null>true</contains-null>
-              <collation flag='0' name='LEN_RUS' />
-              <object-id>[SAT_NEW_long.csv_8B152C9DAD614870B2CA38E1B2DA2E0D]</object-id>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>Score</remote-name>
-              <remote-type>20</remote-type>
-              <local-name>[Score]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>Score</remote-alias>
-              <ordinal>3</ordinal>
-              <family>SAT_NEW_long.csv</family>
-              <local-type>integer</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>257</approx-count>
-              <contains-null>true</contains-null>
-              <object-id>[SAT_NEW_long.csv_8B152C9DAD614870B2CA38E1B2DA2E0D]</object-id>
-            </metadata-record>
-          </metadata-records>
-        </connection>
-      </extract>
-      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
-      <style>
-        <style-rule element='mark'>
-          <encoding attr='color' field='[none:State:nk]' type='palette'>
-            <map to='#499894'>
-              <bucket>&quot;Colorado&quot;</bucket>
-            </map>
-            <map to='#499894'>
-              <bucket>&quot;Nevada&quot;</bucket>
-            </map>
-            <map to='#499894'>
-              <bucket>&quot;Washington&quot;</bucket>
-            </map>
-            <map to='#4e79a7'>
-              <bucket>&quot;Connecticut&quot;</bucket>
-            </map>
-            <map to='#4e79a7'>
-              <bucket>&quot;Maryland&quot;</bucket>
-            </map>
-            <map to='#4e79a7'>
-              <bucket>&quot;South Carolina&quot;</bucket>
-            </map>
-            <map to='#59a14f'>
-              <bucket>&quot;Mississippi&quot;</bucket>
-            </map>
-            <map to='#59a14f'>
-              <bucket>&quot;New York&quot;</bucket>
-            </map>
-            <map to='#59a14f'>
-              <bucket>&quot;United States&quot;</bucket>
-            </map>
-            <map to='#76b7b2'>
-              <bucket>&quot;New Hampshire&quot;</bucket>
-            </map>
-            <map to='#79706e'>
-              <bucket>&quot;Florida&quot;</bucket>
-            </map>
-            <map to='#79706e'>
-              <bucket>&quot;Rhode Island&quot;</bucket>
-            </map>
-            <map to='#86bcb6'>
-              <bucket>&quot;Delaware&quot;</bucket>
-            </map>
-            <map to='#86bcb6'>
-              <bucket>&quot;Pennsylvania&quot;</bucket>
-            </map>
-            <map to='#86bcb6'>
-              <bucket>&quot;West Virginia&quot;</bucket>
-            </map>
-            <map to='#8cd17d'>
-              <bucket>&quot;Arizona&quot;</bucket>
-            </map>
-            <map to='#8cd17d'>
-              <bucket>&quot;Missouri&quot;</bucket>
-            </map>
-            <map to='#8cd17d'>
-              <bucket>&quot;Utah&quot;</bucket>
-            </map>
-            <map to='#9d7660'>
-              <bucket>&quot;Iowa&quot;</bucket>
-            </map>
-            <map to='#9d7660'>
-              <bucket>&quot;Louisiana&quot;</bucket>
-            </map>
-            <map to='#a0cbe8'>
-              <bucket>&quot;Alabama&quot;</bucket>
-            </map>
-            <map to='#a0cbe8'>
-              <bucket>&quot;Oregon&quot;</bucket>
-            </map>
-            <map to='#a0cbe8'>
-              <bucket>&quot;South Dakota&quot;</bucket>
-            </map>
-            <map to='#b07aa1'>
-              <bucket>&quot;Illinois&quot;</bucket>
-            </map>
-            <map to='#b07aa1'>
-              <bucket>&quot;Kansas&quot;</bucket>
-            </map>
-            <map to='#b6992d'>
-              <bucket>&quot;Arkansas&quot;</bucket>
-            </map>
-            <map to='#b6992d'>
-              <bucket>&quot;Montana&quot;</bucket>
-            </map>
-            <map to='#b6992d'>
-              <bucket>&quot;Vermont&quot;</bucket>
-            </map>
-            <map to='#bab0ac'>
-              <bucket>&quot;Georgia&quot;</bucket>
-            </map>
-            <map to='#bab0ac'>
-              <bucket>&quot;North Carolina&quot;</bucket>
-            </map>
-            <map to='#d37295'>
-              <bucket>&quot;Hawaii&quot;</bucket>
-            </map>
-            <map to='#d37295'>
-              <bucket>&quot;North Dakota&quot;</bucket>
-            </map>
-            <map to='#d4a6c8'>
-              <bucket>&quot;Indiana&quot;</bucket>
-            </map>
-            <map to='#d4a6c8'>
-              <bucket>&quot;Kentucky&quot;</bucket>
-            </map>
-            <map to='#d7b5a6'>
-              <bucket>&quot;Oklahoma&quot;</bucket>
-            </map>
-            <map to='#e15759'>
-              <bucket>&quot;Massachusetts&quot;</bucket>
-            </map>
-            <map to='#e15759'>
-              <bucket>&quot;New Jersey&quot;</bucket>
-            </map>
-            <map to='#e15759'>
-              <bucket>&quot;Wisconsin&quot;</bucket>
-            </map>
-            <map to='#f1ce63'>
-              <bucket>&quot;California&quot;</bucket>
-            </map>
-            <map to='#f1ce63'>
-              <bucket>&quot;Nebraska&quot;</bucket>
-            </map>
-            <map to='#f1ce63'>
-              <bucket>&quot;Virginia&quot;</bucket>
-            </map>
-            <map to='#f28e2b'>
-              <bucket>&quot;Maine&quot;</bucket>
-            </map>
-            <map to='#f28e2b'>
-              <bucket>&quot;Michigan&quot;</bucket>
-            </map>
-            <map to='#f28e2b'>
-              <bucket>&quot;Tennessee&quot;</bucket>
-            </map>
-            <map to='#fabfd2'>
-              <bucket>&quot;Idaho&quot;</bucket>
-            </map>
-            <map to='#fabfd2'>
-              <bucket>&quot;Ohio&quot;</bucket>
-            </map>
-            <map to='#ff9d9a'>
-              <bucket>&quot;District of Columbia&quot;</bucket>
-            </map>
-            <map to='#ff9d9a'>
-              <bucket>&quot;New Mexico&quot;</bucket>
-            </map>
-            <map to='#ff9d9a'>
-              <bucket>&quot;Wyoming&quot;</bucket>
-            </map>
-            <map to='#ffbe7d'>
-              <bucket>&quot;Alaska&quot;</bucket>
-            </map>
-            <map to='#ffbe7d'>
-              <bucket>&quot;Minnesota&quot;</bucket>
-            </map>
-            <map to='#ffbe7d'>
-              <bucket>&quot;Texas&quot;</bucket>
-            </map>
-          </encoding>
-        </style-rule>
-      </style>
-      <semantic-values>
-        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
-      </semantic-values>
-      <object-graph>
-        <objects>
-          <object caption='SAT_NEW_long.csv' id='SAT_NEW_long.csv_8B152C9DAD614870B2CA38E1B2DA2E0D'>
-            <properties context=''>
-              <relation connection='textscan.1s9xl4x0k0n4sq120px4c1w1apaw' name='SAT_NEW_long.csv' table='[SAT_NEW_long#csv]' type='table'>
-                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
-                  <column datatype='string' name='State' ordinal='0' />
-                  <column datatype='string' name='Year' ordinal='1' />
-                  <column datatype='string' name='Subject' ordinal='2' />
-                  <column datatype='integer' name='Score' ordinal='3' />
-                </columns>
-              </relation>
-            </properties>
-            <properties context='extract'>
-              <relation name='Extract' table='[Extract].[Extract]' type='table' />
-            </properties>
-          </object>
-        </objects>
-      </object-graph>
-    </datasource>
     <datasource caption='ACT_all_years_long' inline='true' name='federated.13nhwss1lnlii01f7th6d16xtesa' version='18.1'>
       <connection class='federated'>
         <named-connections>
@@ -2700,6 +2353,357 @@
         </objects>
       </object-graph>
     </datasource>
+    <datasource caption='SAT_NEW_long' inline='true' name='federated.11t7efg1iybohx16ieuth0f119rh' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='SAT_NEW_long' name='textscan.1s9xl4x0k0n4sq120px4c1w1apaw'>
+            <connection class='textscan' directory='C:/Users/emcdo/OneDrive/Documents/GitHub/SpringBoardProjects/Capstone3' filename='SAT_NEW_long.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1s9xl4x0k0n4sq120px4c1w1apaw' name='SAT_NEW_long.csv' table='[SAT_NEW_long#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='State' ordinal='0' />
+            <column datatype='string' name='Year' ordinal='1' />
+            <column datatype='string' name='Subject' ordinal='2' />
+            <column datatype='integer' name='Score' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[SAT_NEW_long.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[SAT_NEW_long.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[SAT_NEW_long.csv_8B152C9DAD614870B2CA38E1B2DA2E0D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[SAT_NEW_long.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[SAT_NEW_long.csv_8B152C9DAD614870B2CA38E1B2DA2E0D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Subject</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Subject]</local-name>
+            <parent-name>[SAT_NEW_long.csv]</parent-name>
+            <remote-alias>Subject</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[SAT_NEW_long.csv_8B152C9DAD614870B2CA38E1B2DA2E0D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Score]</local-name>
+            <parent-name>[SAT_NEW_long.csv]</parent-name>
+            <remote-alias>Score</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[SAT_NEW_long.csv_8B152C9DAD614870B2CA38E1B2DA2E0D]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='ACTsum' datatype='integer' name='[Calculation_1605814762568171526]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='Sum([Score])' />
+      </column>
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Year1' datatype='string' name='[Year]' role='dimension' type='nominal' />
+      <column caption='SAT_NEW_long.csv' datatype='table' name='[__tableau_internal_object_id__].[SAT_NEW_long.csv_8B152C9DAD614870B2CA38E1B2DA2E0D]' role='measure' type='quantitative' />
+      <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/emcdo/AppData/Local/Temp/TableauTemp/#TableauTemp_0879jj01g420a61aoiedb01dudv3.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='06/15/2025 12:50:17 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>State</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State</remote-alias>
+              <ordinal>0</ordinal>
+              <family>SAT_NEW_long.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[SAT_NEW_long.csv_8B152C9DAD614870B2CA38E1B2DA2E0D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>1</ordinal>
+              <family>SAT_NEW_long.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[SAT_NEW_long.csv_8B152C9DAD614870B2CA38E1B2DA2E0D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Subject</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Subject]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Subject</remote-alias>
+              <ordinal>2</ordinal>
+              <family>SAT_NEW_long.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[SAT_NEW_long.csv_8B152C9DAD614870B2CA38E1B2DA2E0D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Score</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Score</remote-alias>
+              <ordinal>3</ordinal>
+              <family>SAT_NEW_long.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>257</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[SAT_NEW_long.csv_8B152C9DAD614870B2CA38E1B2DA2E0D]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:State:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Colorado&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Nevada&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Washington&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Connecticut&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Maryland&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;South Carolina&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Mississippi&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;New York&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;United States&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;New Hampshire&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Florida&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Rhode Island&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Delaware&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Pennsylvania&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;West Virginia&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Arizona&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Missouri&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Utah&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Iowa&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Louisiana&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Alabama&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Oregon&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;South Dakota&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Illinois&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Kansas&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Arkansas&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Montana&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Vermont&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Georgia&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;North Carolina&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Hawaii&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;North Dakota&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Indiana&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Kentucky&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Oklahoma&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Massachusetts&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;New Jersey&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Wisconsin&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;California&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Nebraska&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Virginia&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Maine&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Michigan&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Tennessee&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Idaho&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Ohio&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;District of Columbia&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;New Mexico&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Wyoming&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Alaska&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Minnesota&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Texas&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='SAT_NEW_long.csv' id='SAT_NEW_long.csv_8B152C9DAD614870B2CA38E1B2DA2E0D'>
+            <properties context=''>
+              <relation connection='textscan.1s9xl4x0k0n4sq120px4c1w1apaw' name='SAT_NEW_long.csv' table='[SAT_NEW_long#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='State' ordinal='0' />
+                  <column datatype='string' name='Year' ordinal='1' />
+                  <column datatype='string' name='Subject' ordinal='2' />
+                  <column datatype='integer' name='Score' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
   </datasources>
   <mapsources>
     <mapsource name='Tableau' />
@@ -2747,8 +2751,9 @@
             <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
             <style>
               <style-rule element='mark'>
-                <format attr='mark-labels-cull' value='true' />
-                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='selection' />
               </style-rule>
             </style>
           </pane>
@@ -3945,8 +3950,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='16' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98004' id='15' param='vert' type-v2='layout-flow' w='97538' x='1231' y='998'>
+            <zone h='100000' id='18' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='17' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
                 <zone fixed-size='280' h='49002' id='6' is-fixed='true' name='SAT1 StateYear/Score' w='97538' x='1231' y='998'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -4260,7 +4265,7 @@
       </cards>
       <simple-id uuid='{B28692E1-D163-4990-B8E9-C4FCFC38C37E}' />
     </window>
-    <window class='worksheet' name='SAT Scores - 10 yr forecast'>
+    <window class='worksheet' maximized='true' name='SAT Scores - 10 yr forecast'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -4288,7 +4293,7 @@
       </cards>
       <simple-id uuid='{264E0B5E-00C0-401E-8A0B-ED444C07988A}' />
     </window>
-    <window class='worksheet' maximized='true' name='ACT Score trend'>
+    <window class='worksheet' name='ACT Score trend'>
       <cards>
         <edge name='left'>
           <strip size='160'>

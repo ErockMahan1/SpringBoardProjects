@@ -1,5 +1,5 @@
 Data Science Career Track
-Model Metrics For Capstone 2 - 
+Model Metrics For Capstone 
 Academic Success Related to Spending
 
 Model Metrics Summary: Graduation Rate Forecasting & Spending Analysis
@@ -7,7 +7,7 @@ Model Metrics Summary: Graduation Rate Forecasting & Spending Analysis
 
 Models Used
 ----------
-- Random Forest Regressor (or insert specific model used)
+- Random Forest Regressor (or insert specific model used), Linear Regression, ARIMA, ETS, Tableau Forecast
 - Target Variables: Graduation Rate (%), Spending
 - Features: State, Year, Education Spending, Graduation Rate
 
@@ -32,6 +32,8 @@ Notable Observations
 - Vermont had one of the highest increases in spending but experienced the largest drop in graduation rate.
 - Wyoming had the biggest spending cut but still saw a modest increase in graduation rate.
 - Some states saw improved graduation outcomes despite minimal spending changes, suggesting other factors are responsible for these changes
+- Scholastic Aptitude Tests (SATs) have shown progressively lower results despite increases in spending in secondary education
+- Lowest and Highest states in terms of predicted graduation rates score almost identically on nationwide standardized tests
 
 
 Visualization Summary
@@ -41,6 +43,7 @@ Visualization Summary
 - Color-coded bar charts visualized:
   - Spending change (green = increase, red = decrease)
   - Graduation rate change (position on axis = change; color = spending context)
+- Plot of Standardized Tests show downward trend
 
 
 Forecasting
@@ -49,10 +52,11 @@ Forecasting
 - Visual comparison of actual vs. predicted performance for individual states showed:
   - Reasonably close alignment for many states
   - Some divergence where model underestimated or overestimated the true values
+- SAT scores were predicted for the next 10 years, showing an increasing decline in average score rate
 
 
 Next Steps
 ----------
-- Incorporate additional features (quality of education, economic indicators, alternative secondary education)
-- Compare state-specific models
-
+- Incorporate additional features (economic indicators, alternative secondary education, cultural attitudes toward education)
+- Compare state-specific models of secondary education spending
+- Evaluate spending and academic achievement at 8th-Grade level
