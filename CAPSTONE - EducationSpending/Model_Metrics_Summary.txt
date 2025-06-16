@@ -14,17 +14,45 @@ Models Used
 
 Prediction Performance
 ----------------------
+**Measuring spending against graduation rate**
 Pearson correlation coefficient: 0.02823
 Pearson r: 0.0282320519487733
-p-value: (rounded to 5 decimal places)s  (0.00005)
+p-value: (rounded to 5 decimal places)  (0.00005)
+
+
+**Measuring spending against ACT score**
+ACT Score = 0.0002 * Spending + 18.1713
+R^2: 0.3052
+
+
+**Measuring spending against old SAT scores**
+SATo Score = -0.0041 * Spending + 856.5526
+R^2: 0.0016
+
+
+**Measuring spending against new SAT scores **
+SATn Score = -0.0040 * Spending + 813.6533
+R^2: 0.0048
+
 
 
 Correlation Analysis
 --------------------
 - Spending vs. Graduation Rate:
-  - Pearson Correlation Coefficient: e.g., 0.19
-  - Interpretation: Weak to no linear correlation overall, with variation across states.
-- Key Insight: Increased spending does NOT consistently lead to increased graduation rates, nor does reduced spending always correlate with decreased performance.
+Increased spending does NOT consistently lead to increased graduation rates, nor does reduced spending always correlate with decreased performance.
+
+
+-Spending vs. ACT Score:
+There is a moderate positive relationship between spending and ACT scores. About 30.5% of the variance in ACT scores can be explained by spending, suggesting some practical association.
+
+
+-Spending vs. old SAT Score:
+There is virtually no relationship between spending and old SAT scores. Spending explains less than 0.2% of the variance in scores.
+
+
+-Spending vs new SAT Score:
+There is no meaningful relationship between spending and new SAT scores. Spending explains only 0.5% of the variance in scores.
+
 
 
 Notable Observations
